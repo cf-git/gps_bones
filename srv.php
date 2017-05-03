@@ -5,7 +5,7 @@
 date_default_timezone_set('Asia/Yekaterinburg');
 error_reporting(E_ALL & ~E_NOTICE); 
 set_time_limit (0); 
-$ip='xxx.xx.xx.xx'; 
+$ip='0.0.0.0'; 
 $port='5027'; 
 include 'database.class.php';
 $database = new wsilence\BeaconDatabase();
