@@ -1,0 +1,1 @@
+beacon.sql - таблица в БД MySQL
