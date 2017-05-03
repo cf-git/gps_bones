@@ -5,11 +5,15 @@
 date_default_timezone_set('Asia/Yekaterinburg');
 error_reporting(E_ALL & ~E_NOTICE); 
 set_time_limit (0); 
-$ip='0.0.0.0'; 
-$port='5027'; 
+
+include 'config.php';
 include 'database.class.php';
-$database = new wsilence\BeaconDatabase();
 include 'vendor/autoload.php';
+
+
+$ip=BIND_IP; 
+$port='5027'; 
+$database = new wsilence\BeaconDatabase();
 
 
 
